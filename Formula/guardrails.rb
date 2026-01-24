@@ -1,28 +1,28 @@
 class Guardrails < Formula
   desc "PreToolCall hook for Claude Code - security guardrails using biome + custom rules"
   homepage "https://github.com/thkt/claude-guardrails"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/thkt/claude-guardrails/releases/download/v0.1.0/guardrails-aarch64-apple-darwin"
-      sha256 "312d6c0b1449e7e2f7dcce68f14871815a35354cf45cfaf344e3298fd6a2c314"
+      url "https://github.com/thkt/claude-guardrails/releases/download/v0.2.0/guardrails-aarch64-apple-darwin"
+      sha256 "a75a88ae3e4882b70137a7904149710a405a484cc095c7f51f9c9b33586d92be"
     end
     on_intel do
-      url "https://github.com/thkt/claude-guardrails/releases/download/v0.1.0/guardrails-x86_64-apple-darwin"
-      sha256 "e3aed9549ad0794f9db965e77e3fe1daac6943347056a6fd3563eafc06728281"
+      url "https://github.com/thkt/claude-guardrails/releases/download/v0.2.0/guardrails-x86_64-apple-darwin"
+      sha256 "16503996ae282075f37462c824a6d2679530dbd5eba6f5c868f3672d74721065"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/thkt/claude-guardrails/releases/download/v0.1.0/guardrails-aarch64-unknown-linux-gnu"
-      sha256 "91087c727d3f84ef9a4f955360c99b401e4a99a55fb911ef16ff8c3415b6e231"
+      url "https://github.com/thkt/claude-guardrails/releases/download/v0.2.0/guardrails-aarch64-unknown-linux-gnu"
+      sha256 "e09ee0410302da738fc97ed7ee18b98714938f6fef1a05418cc8769213267993"
     end
     on_intel do
-      url "https://github.com/thkt/claude-guardrails/releases/download/v0.1.0/guardrails-x86_64-unknown-linux-gnu"
-      sha256 "ef1884184e97f258fa5d5b6cb4110ff1bea186a33ab6c0688d3bfcca772137e6"
+      url "https://github.com/thkt/claude-guardrails/releases/download/v0.2.0/guardrails-x86_64-unknown-linux-gnu"
+      sha256 "9d7d079745a1ba6b55a844635e5900315ef96957b20dc18a8b634904108fc4e3"
     end
   end
 
@@ -57,7 +57,7 @@ class Guardrails < Formula
   end
 
   test do
-    # Test that binary runs (expects stdin input)
-    assert_match(//, pipe_output(bin/"guardrails", "{}", 0))
+    output = pipe_output(bin/"guardrails", '{"tool_input":{"content":"test"}}', 0)
+    assert_match "pass", output
   end
 end
