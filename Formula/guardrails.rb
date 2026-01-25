@@ -7,22 +7,22 @@ class Guardrails < Formula
   on_macos do
     on_arm do
       url "https://github.com/thkt/claude-guardrails/releases/download/v0.3.0/guardrails-aarch64-apple-darwin"
-      sha256 "ea85adf09689cedaa62cfea4ab960c61f08e72b81da8316b96e28fcc06bf8ebe"
+      sha256 "c52a08a73cd786ebf0bbb561c430b1cb3e555bdbb1a94ddbce76e933c8f7d2ec"
     end
     on_intel do
       url "https://github.com/thkt/claude-guardrails/releases/download/v0.3.0/guardrails-x86_64-apple-darwin"
-      sha256 "3e15d7fe4ff7f786e8bfb4beb3d94065084411de334bfe29c5ee4f8eb04f6131"
+      sha256 "ed7e88515b7fa0ca9a278802919d97c8d0ce68f6e3d3258b94ed13b8aa0bed77"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/thkt/claude-guardrails/releases/download/v0.3.0/guardrails-aarch64-unknown-linux-gnu"
-      sha256 "e64422240ec6c982faa99225733a4ca7188bd6db1b6bd4465576bb774e2e57fb"
+      sha256 "a2b8e7213368127a5924988e0433e2e12bf4feaeee9c49a3b1f38ec7fcea845c"
     end
     on_intel do
       url "https://github.com/thkt/claude-guardrails/releases/download/v0.3.0/guardrails-x86_64-unknown-linux-gnu"
-      sha256 "c82525e6f62fbb483585d9e1bea87f50e6fc1e018369cbad143270a1ed1c4c8e"
+      sha256 "0fc9d6596932474225ab3be5cd0eb68f88e852e98f36c446a25ec84ad0e8c8eb"
     end
   end
 
