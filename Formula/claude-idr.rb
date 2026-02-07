@@ -1,28 +1,28 @@
 class ClaudeIdr < Formula
   desc "Generate Implementation Decision Records from git diffs using Claude CLI"
   homepage "https://github.com/thkt/claude-idr"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/thkt/claude-idr/releases/download/v0.1.0/claude-idr-aarch64-apple-darwin"
-      sha256 "7358f0602e5de25f7f0eab2fe465cff35ea330048abdcdfed62d16c3dc2a8dac"
+      url "https://github.com/thkt/claude-idr/releases/download/v0.1.1/claude-idr-aarch64-apple-darwin"
+      sha256 "ad82df64d563de9536480b2a422fd7f114ebd9ee0e6fcf34d8d40be20880df75"
     end
     on_intel do
-      url "https://github.com/thkt/claude-idr/releases/download/v0.1.0/claude-idr-x86_64-apple-darwin"
-      sha256 "be6402c34636e35e71907908f5ee355382e5236776089f1a22a5152f53eaa4ed"
+      url "https://github.com/thkt/claude-idr/releases/download/v0.1.1/claude-idr-x86_64-apple-darwin"
+      sha256 "71c8492601069147bbe5dc1d31cafc87ec5900b7776aea35e8e605f2ac2cc29c"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/thkt/claude-idr/releases/download/v0.1.0/claude-idr-aarch64-unknown-linux-gnu"
-      sha256 "6e0a14154f12c5b9a77f4fccef6c40c79c3b34a47fb65af5b94db7f4a91bf737"
+      url "https://github.com/thkt/claude-idr/releases/download/v0.1.1/claude-idr-aarch64-unknown-linux-gnu"
+      sha256 "0b349f833bd2a3ac6b8ecdc95cf72f140a6d1105fb1196ecbe1b787ee762e1d7"
     end
     on_intel do
-      url "https://github.com/thkt/claude-idr/releases/download/v0.1.0/claude-idr-x86_64-unknown-linux-gnu"
-      sha256 "6709444d0e88c91ac1e6c2ae4cd06d2fe650660e38e52db344f3acffe7bb459e"
+      url "https://github.com/thkt/claude-idr/releases/download/v0.1.1/claude-idr-x86_64-unknown-linux-gnu"
+      sha256 "da4c7237b9a98ca811802e6aea51063983d83e7eb940f1c103a9ecd347852772"
     end
   end
 
