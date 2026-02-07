@@ -1,0 +1,61 @@
+class ClaudeIdr < Formula
+  desc "Generate Implementation Decision Records from git diffs using Claude CLI"
+  homepage "https://github.com/thkt/claude-idr"
+  version "__VERSION__"
+  license "MIT"
+
+  on_macos do
+    on_arm do
+      url "https://github.com/thkt/claude-idr/releases/download/__TAG__/claude-idr-aarch64-apple-darwin"
+      sha256 "__SHA_AARCH64_DARWIN__"
+    end
+    on_intel do
+      url "https://github.com/thkt/claude-idr/releases/download/__TAG__/claude-idr-x86_64-apple-darwin"
+      sha256 "__SHA_X86_64_DARWIN__"
+    end
+  end
+
+  on_linux do
+    on_arm do
+      url "https://github.com/thkt/claude-idr/releases/download/__TAG__/claude-idr-aarch64-unknown-linux-gnu"
+      sha256 "__SHA_AARCH64_LINUX__"
+    end
+    on_intel do
+      url "https://github.com/thkt/claude-idr/releases/download/__TAG__/claude-idr-x86_64-unknown-linux-gnu"
+      sha256 "__SHA_X86_64_LINUX__"
+    end
+  end
+
+  def install
+    binary_name = if OS.mac?
+      Hardware::CPU.arm? ? "claude-idr-aarch64-apple-darwin" : "claude-idr-x86_64-apple-darwin"
+    else
+      Hardware::CPU.arm? ? "claude-idr-aarch64-unknown-linux-gnu" : "claude-idr-x86_64-unknown-linux-gnu"
+    end
+    bin.install binary_name => "claude-idr"
+  end
+
+  def caveats
+    <<~EOS
+      To use claude-idr as a git pre-commit hook, add to your ~/.claude/settings.json:
+
+        "hooks": {
+          "PostToolUse": [
+            {
+              "matcher": "Write|Edit",
+              "hooks": [
+                {
+                  "type": "command",
+                  "command": "#{HOMEBREW_PREFIX}/bin/claude-idr"
+                }
+              ]
+            }
+          ]
+        }
+    EOS
+  end
+
+  test do
+    assert_match "claude-idr", shell_output("#{bin}/claude-idr --version")
+  end
+end
