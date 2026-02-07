@@ -37,21 +37,14 @@ class ClaudeIdr < Formula
 
   def caveats
     <<~EOS
-      To use claude-idr as a git pre-commit hook, add to your ~/.claude/settings.json:
+      Install as a git pre-commit hook in your project:
 
-        "hooks": {
-          "PostToolUse": [
-            {
-              "matcher": "Write|Edit",
-              "hooks": [
-                {
-                  "type": "command",
-                  "command": "#{HOMEBREW_PREFIX}/bin/claude-idr"
-                }
-              ]
-            }
-          ]
-        }
+        cd your-project
+        echo -e '#!/bin/bash\\nclaude-idr || true' > .git/hooks/pre-commit
+        chmod +x .git/hooks/pre-commit
+
+      IDRs are generated automatically when you commit after a Claude Code session.
+      See: https://github.com/thkt/claude-idr#setup
     EOS
   end
 
