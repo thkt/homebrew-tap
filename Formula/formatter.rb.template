@@ -1,0 +1,58 @@
+class Formatter < Formula
+  desc "PostToolUse hook for Claude Code - auto-formats files using biome"
+  homepage "https://github.com/thkt/claude-formatter"
+  version "__VERSION__"
+  license "MIT"
+
+  on_macos do
+    on_arm do
+      url "https://github.com/thkt/claude-formatter/releases/download/__TAG__/formatter-aarch64-apple-darwin.tar.gz"
+      sha256 "__SHA_AARCH64_DARWIN__"
+    end
+    on_intel do
+      url "https://github.com/thkt/claude-formatter/releases/download/__TAG__/formatter-x86_64-apple-darwin.tar.gz"
+      sha256 "__SHA_X86_64_DARWIN__"
+    end
+  end
+
+  on_linux do
+    on_arm do
+      url "https://github.com/thkt/claude-formatter/releases/download/__TAG__/formatter-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "__SHA_AARCH64_LINUX__"
+    end
+    on_intel do
+      url "https://github.com/thkt/claude-formatter/releases/download/__TAG__/formatter-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "__SHA_X86_64_LINUX__"
+    end
+  end
+
+  def install
+    bin.install "formatter"
+  end
+
+  def caveats
+    <<~EOS
+      To use formatter with Claude Code, add to your ~/.claude/settings.json:
+
+        "hooks": {
+          "PostToolUse": [
+            {
+              "matcher": "Write|Edit|MultiEdit",
+              "hooks": [
+                {
+                  "type": "command",
+                  "command": "#{HOMEBREW_PREFIX}/bin/formatter",
+                  "timeout": 2000
+                }
+              ]
+            }
+          ]
+        }
+    EOS
+  end
+
+  test do
+    output = pipe_output(bin/"formatter", '{"tool_name":"Write","tool_input":{"file_path":"test.txt"}}', 0)
+    assert_equal "", output
+  end
+end
