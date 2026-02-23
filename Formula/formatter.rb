@@ -1,28 +1,28 @@
 class Formatter < Formula
   desc "PostToolUse hook for Claude Code - auto-formats files using biome"
   homepage "https://github.com/thkt/claude-formatter"
-  version "0.3.1"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/thkt/claude-formatter/releases/download/v0.3.1/formatter-aarch64-apple-darwin.tar.gz"
-      sha256 "64a0833fd71b73aa736440a9270a0196a47680f99a5aed7c00ac70e174a7d297"
+      url "https://github.com/thkt/claude-formatter/releases/download/v0.4.0/formatter-aarch64-apple-darwin.tar.gz"
+      sha256 "df12e2f062e1f0e8f929c996aa778574afa3bf507b1aeda806c369cf51cd925c"
     end
     on_intel do
-      url "https://github.com/thkt/claude-formatter/releases/download/v0.3.1/formatter-x86_64-apple-darwin.tar.gz"
-      sha256 "ff663b30b9f545451b584f9331e0eb4af2238a9139bfb3f70faaac64adf1cafb"
+      url "https://github.com/thkt/claude-formatter/releases/download/v0.4.0/formatter-x86_64-apple-darwin.tar.gz"
+      sha256 "07efcda6001a9e3e493a768a27d90749083c1b5c4b555ae74135a7630c565cea"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/thkt/claude-formatter/releases/download/v0.3.1/formatter-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "836e02ea2b118f5be4ddc4cdf0ef6933b385822fbae84210c4b04ae2d4af0a4a"
+      url "https://github.com/thkt/claude-formatter/releases/download/v0.4.0/formatter-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "bc19172bbdbf36a3a597ab2bab77ab206725a24582e7b4bdc888e36eb66fcab7"
     end
     on_intel do
-      url "https://github.com/thkt/claude-formatter/releases/download/v0.3.1/formatter-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "a517d246d734da8b04435a664d2494ad6529f37825f047e7e9af48aa43e760bc"
+      url "https://github.com/thkt/claude-formatter/releases/download/v0.4.0/formatter-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "1dbccf2ae7ecec3ed5c4dd85188583ef88ee835ee5e7fcffe0f299fca353ac7d"
     end
   end
 
