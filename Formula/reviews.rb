@@ -7,22 +7,22 @@ class Reviews < Formula
   on_macos do
     on_arm do
       url "https://github.com/thkt/claude-reviews/releases/download/v0.3.0/reviews-aarch64-apple-darwin.tar.gz"
-      sha256 "bceae2031cc4dad74641f72762beddead2b290024967065a2e10eb1a7ee93948"
+      sha256 "14545813434b1502219b6da2bc20b10adb8403655905062fd3e45ce873bd1523"
     end
     on_intel do
       url "https://github.com/thkt/claude-reviews/releases/download/v0.3.0/reviews-x86_64-apple-darwin.tar.gz"
-      sha256 "527c5a53a65ae62bf65cce8005d8c6b5992d6d383526663e57ba6916066d62f1"
+      sha256 "2219cefa6529fc99b4ca766b3ee8f3178fd9c1922216521e16283c6c8236a865"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/thkt/claude-reviews/releases/download/v0.3.0/reviews-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "c9e08f1c136c6ee25ab3c0bb6428ceaf59c5d20c3bafadc5b2e1a910d671faeb"
+      sha256 "3fa9ac0fa5b9446b3c5d5452d0e594a384f0ebdc2e67bdea379403221424fe2e"
     end
     on_intel do
       url "https://github.com/thkt/claude-reviews/releases/download/v0.3.0/reviews-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "1e84586645423c5da29fa3dbe372c08972adf51623abdc65eb69d1a1cdf9e0df"
+      sha256 "be7df285a3484dfc401cdaaf6a72c096c3c5b8bbca476a340cd895fc822bb0d5"
     end
   end
 
