@@ -1,13 +1,13 @@
 class Gates < Formula
   desc "Completion hook for Claude Code - parallel quality gates (knip, tsgo, madge)"
   homepage "https://github.com/thkt/gates"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/thkt/gates/releases/download/v0.1.0/gates-aarch64-apple-darwin.tar.gz"
-      sha256 "7430bc50d5c7987d3b5c4d877a426bd761886284be752b9d4c9f539dc21e7126"
+      url "https://github.com/thkt/gates/releases/download/v0.2.0/gates-aarch64-apple-darwin.tar.gz"
+      sha256 "d2dac57764a0570cba08f5cdf29faf2963d137b57d8924be87350153f493d65d"
     end
   end
 
