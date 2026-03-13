@@ -1,28 +1,28 @@
 class Scout < Formula
   desc "MCP server for web search (Gemini Grounding) and page fetching (HTML to Markdown)"
   homepage "https://github.com/thkt/scout"
-  version "0.3.0"
+  version "0.3.1"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/thkt/scout/releases/download/v0.3.0/scout-aarch64-apple-darwin.tar.gz"
-      sha256 "1f8a753615a6bdda162833d0e1496c0fbf7b7968938247b31b7fa512f6810b32"
+      url "https://github.com/thkt/scout/releases/download/v0.3.1/scout-aarch64-apple-darwin.tar.gz"
+      sha256 "5fce29ac3dc40bd495a9122817bc63b2d00ca44f287e4b5c3ec7b447c782207c"
     end
     on_intel do
-      url "https://github.com/thkt/scout/releases/download/v0.3.0/scout-x86_64-apple-darwin.tar.gz"
-      sha256 "39a6778e6884ea33c0feafb3f7fbf6c1f4d82e7e8172eeed77e7263d6bfda909"
+      url "https://github.com/thkt/scout/releases/download/v0.3.1/scout-x86_64-apple-darwin.tar.gz"
+      sha256 "07d1d01ec7e041f883a8d44178dfb39432981b0d9ce1e643edcd243181b49987"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/thkt/scout/releases/download/v0.3.0/scout-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "23ee4df5ea02f8ba75efbadd82d479d9131fc917d08b53e2c83c3c33ddc97868"
+      url "https://github.com/thkt/scout/releases/download/v0.3.1/scout-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "c5770e1753f472f2370696a615add31fa1f156d5e828da4b6196f445cc7a3cb1"
     end
     on_intel do
-      url "https://github.com/thkt/scout/releases/download/v0.3.0/scout-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "c92cad5155e17bdfaf2200bd531000d6caf4916ea66f6a2042f362474c75aa03"
+      url "https://github.com/thkt/scout/releases/download/v0.3.1/scout-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "2633b7e25845952cbdfc33c253e3d40800a987c485b7d949273633756b2dfbd9"
     end
   end
 
