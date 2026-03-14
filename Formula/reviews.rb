@@ -1,28 +1,28 @@
 class Reviews < Formula
   desc "PreToolUse hook for Claude Code - pre-flight static analysis for /audit"
   homepage "https://github.com/thkt/reviews"
-  version "0.5.1"
+  version "0.5.2"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/thkt/reviews/releases/download/v0.5.1/reviews-aarch64-apple-darwin.tar.gz"
-      sha256 "378edd8b55466b5a508b78774834405332a51f418c5dd50b58711e43e7703e9a"
+      url "https://github.com/thkt/reviews/releases/download/v0.5.2/reviews-aarch64-apple-darwin.tar.gz"
+      sha256 "07d2120ff9bd3558155857d4100001270a3d9a0e54593c4d443aac244a5eaaf0"
     end
     on_intel do
-      url "https://github.com/thkt/reviews/releases/download/v0.5.1/reviews-x86_64-apple-darwin.tar.gz"
-      sha256 "d13c8302b10d0b628d6282c4d4b12d43d78302a3e76b94631419c0e5efc5bb08"
+      url "https://github.com/thkt/reviews/releases/download/v0.5.2/reviews-x86_64-apple-darwin.tar.gz"
+      sha256 "ea4f10b38b072e0ab70803d588f6a5722313ab820ad4ff132fe11ea2a01e7214"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/thkt/reviews/releases/download/v0.5.1/reviews-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "453e93a5ff3e906955781c25cd2b74170972c6b3983624f0f2dba52299bee3bd"
+      url "https://github.com/thkt/reviews/releases/download/v0.5.2/reviews-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "cee27f2ccc345cf4245915e62f4c3803559b0d9c36574baad3d77f83275890e0"
     end
     on_intel do
-      url "https://github.com/thkt/reviews/releases/download/v0.5.1/reviews-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "f738a6514090fcef3040e68b929c8f6da5ddf6f7cd058477b75942515bb16eaf"
+      url "https://github.com/thkt/reviews/releases/download/v0.5.2/reviews-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "e347d12d989eb7dc5a477fb7773b01f2609898a4cf930bfec40d0be49d9ce35e"
     end
   end
 
