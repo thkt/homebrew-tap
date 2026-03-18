@@ -1,28 +1,28 @@
 class Yomu < Formula
   desc "Frontend-specialized semantic code search CLI"
   homepage "https://github.com/thkt/yomu"
-  version "0.5.2"
+  version "0.6.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/thkt/yomu/releases/download/v0.5.2/yomu-aarch64-apple-darwin.tar.gz"
-      sha256 "1d07b764c1d0c04c7d0aa2f6db22155ee2fe60ace307235f4ea20d76b8a695f1"
+      url "https://github.com/thkt/yomu/releases/download/v0.6.0/yomu-aarch64-apple-darwin.tar.gz"
+      sha256 "26a7024c5a4ae1912139f945d725fc9d936cdb7ea83379e8544889a69ff40058"
     end
     on_intel do
-      url "https://github.com/thkt/yomu/releases/download/v0.5.2/yomu-x86_64-apple-darwin.tar.gz"
-      sha256 "359bc558ae6706522162207f6bf779b699098d03722f1f0f9b90e2470b7b0095"
+      url "https://github.com/thkt/yomu/releases/download/v0.6.0/yomu-x86_64-apple-darwin.tar.gz"
+      sha256 "d69be89d75cd26e88ce4bf732e13f2ef182d77ad5c686d1714d290adc457ad08"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/thkt/yomu/releases/download/v0.5.2/yomu-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "f996bdfdd00ba890f8e84e5a4e49225c823049c32ef0b23f2d310a63f0643cc4"
+      url "https://github.com/thkt/yomu/releases/download/v0.6.0/yomu-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "f472afebb021316ef37d8fb827a625d81f351e9da00822005532a8635c88a55f"
     end
     on_intel do
-      url "https://github.com/thkt/yomu/releases/download/v0.5.2/yomu-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "75b261f12dc78dc24148ca20c60bd535b6dcbeb245bc3ef0b86b83a21748144b"
+      url "https://github.com/thkt/yomu/releases/download/v0.6.0/yomu-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "4d275844072769bb4bf97c1f0be3da5c955395903eca8750dd9a371a126398e0"
     end
   end
 
