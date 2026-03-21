@@ -1,28 +1,28 @@
 class Gates < Formula
   desc "Completion hook for Claude Code - parallel quality gates (knip, tsgo, madge)"
   homepage "https://github.com/thkt/gates"
-  version "0.7.1"
+  version "0.8.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/thkt/gates/releases/download/v0.7.1/gates-aarch64-apple-darwin.tar.gz"
-      sha256 "fbf588c7bb3c763b8475198024d21fd22eb7db75228f4c184b6f8b03f60fd7df"
+      url "https://github.com/thkt/gates/releases/download/v0.8.0/gates-aarch64-apple-darwin.tar.gz"
+      sha256 "6e269f9a68535aa48d20e0cef6ee802dadb25be7b81e3c721e5be35a190e7a95"
     end
     on_intel do
-      url "https://github.com/thkt/gates/releases/download/v0.7.1/gates-x86_64-apple-darwin.tar.gz"
-      sha256 "fd7b8ce4086ebbb41bb0f38830557a62eccb2a45b705166f1b11cbbee437ac0a"
+      url "https://github.com/thkt/gates/releases/download/v0.8.0/gates-x86_64-apple-darwin.tar.gz"
+      sha256 "d96316501bee505fae277cd56625594764e24cfad799528ffd79d849007ffbdf"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/thkt/gates/releases/download/v0.7.1/gates-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "eee6f055f02ced16e8a8c8d7693ae05b40c92212b5d0402908ddc544cf82fca3"
+      url "https://github.com/thkt/gates/releases/download/v0.8.0/gates-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "278eb42fa38c998511381934add874d0270fae1e67b986d3afb40a06fa8319f3"
     end
     on_intel do
-      url "https://github.com/thkt/gates/releases/download/v0.7.1/gates-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "ec71e6d28baba355e336c90b33a16291cde3239396a1bbafac9865bfaa29860c"
+      url "https://github.com/thkt/gates/releases/download/v0.8.0/gates-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "2503b354f8cba2553521a316306e580b04029c4e3dfe184b3f5acebd855f8140"
     end
   end
 
