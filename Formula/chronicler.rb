@@ -1,28 +1,28 @@
 class Chronicler < Formula
   desc "Documentation lifecycle hook for Claude Code - staleness detection and update reminders"
   homepage "https://github.com/thkt/chronicler"
-  version "0.3.1"
+  version "0.3.2"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/thkt/chronicler/releases/download/v0.3.1/chronicler-aarch64-apple-darwin.tar.gz"
-      sha256 "ddc5f6a55977eaa07fa27ea233e680f7cf1eba42df94c15dee16d73941a2972b"
+      url "https://github.com/thkt/chronicler/releases/download/v0.3.2/chronicler-aarch64-apple-darwin.tar.gz"
+      sha256 "670c71e3462a239ed2964a77cf703336b0872cdd30ad60c12df05ba1d6dbeca9"
     end
     on_intel do
-      url "https://github.com/thkt/chronicler/releases/download/v0.3.1/chronicler-x86_64-apple-darwin.tar.gz"
-      sha256 "a7967fa8ca53e462a7bb55d63d0a688e935f1208408886058e38e1dd0416c75d"
+      url "https://github.com/thkt/chronicler/releases/download/v0.3.2/chronicler-x86_64-apple-darwin.tar.gz"
+      sha256 "2096e392e167440a00c3a1d3cefa7550733d7fe9dc1a784d5be90e7b703d508a"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/thkt/chronicler/releases/download/v0.3.1/chronicler-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "a7ee339877ee3b5566bb0fdae8810559b52520efda1d25342385f806ff2da7f7"
+      url "https://github.com/thkt/chronicler/releases/download/v0.3.2/chronicler-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "ee6082796ef2d64d6e2df34355d24c48dd26ab455b4473fcb37d3c20d6b19401"
     end
     on_intel do
-      url "https://github.com/thkt/chronicler/releases/download/v0.3.1/chronicler-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "33bbfd9e1e4b9f1a73d8b393d3893b645849635d978b695db90ad9f36479af5c"
+      url "https://github.com/thkt/chronicler/releases/download/v0.3.2/chronicler-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "af5b6814dddedbc1413e8e1d96532c393057d3a9de03e8d06f87df2157fe8a56"
     end
   end
 
