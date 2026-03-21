@@ -7,22 +7,22 @@ class Yomu < Formula
   on_macos do
     on_arm do
       url "https://github.com/thkt/yomu/releases/download/v0.8.0/yomu-aarch64-apple-darwin.tar.gz"
-      sha256 "f276fa62c35242e3abac12c976bd1cbf7300a669d6fb0fbd240b18159addd1d8"
+      sha256 "44e64cba13d6510428beeb46942da9aa30ef095ad634c6ad904c7c7721ef5bfa"
     end
     on_intel do
       url "https://github.com/thkt/yomu/releases/download/v0.8.0/yomu-x86_64-apple-darwin.tar.gz"
-      sha256 "5999b7d67e1a168fba0c092c5ed5bca19c56817807a303f2df8759b792bc0bd5"
+      sha256 "10a043a5e2af20eb975a19fc2bfb8e013b03bc83f040e46eac0901633807e9fa"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/thkt/yomu/releases/download/v0.8.0/yomu-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "f27215c01cfadbfd83f42ba5d3d00c4d6199d27568858943fe2003598ecc59bf"
+      sha256 "9dd8937188b392937b26bdfa473ddeea5757a909c5caa4bd3cd17ac962ca917e"
     end
     on_intel do
       url "https://github.com/thkt/yomu/releases/download/v0.8.0/yomu-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "2ea095e767b9b3aaf89d75e04c5a4957e37b53fa8716dfaaf5aed5a14830505f"
+      sha256 "a6e9d26126648f7e35d13e8a1ddce336c6c0c3328e6a05eb548d685dad3c123c"
     end
   end
 
