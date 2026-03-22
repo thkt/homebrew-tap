@@ -7,22 +7,22 @@ class Gates < Formula
   on_macos do
     on_arm do
       url "https://github.com/thkt/gates/releases/download/v0.9.0/gates-aarch64-apple-darwin.tar.gz"
-      sha256 "fbbaae1a6831389ef58007a024f6e4d2b8392e78d8ff8fe16d2e29b19fba128f"
+      sha256 "917c362446f0eb2f527187d1526ca387e97e7aca71d2ec0fa837690b9c61393e"
     end
     on_intel do
       url "https://github.com/thkt/gates/releases/download/v0.9.0/gates-x86_64-apple-darwin.tar.gz"
-      sha256 "e9575cd3a19833b017582255c5a28dfa60950c9581af10a8dc68f3b8fa9e22f3"
+      sha256 "b0bbb0ff311173a76d79b72c1e74c3ff30f887b4947caaa30fb8cb79476503c0"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/thkt/gates/releases/download/v0.9.0/gates-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "5e379727d93d0ced159740069b97939e0ccbebbeb574479af47f9a4735318b42"
+      sha256 "ecf2c51e3d5793250cb45e81689dd12c065431d39947d63157636ea4dd9fa0c0"
     end
     on_intel do
       url "https://github.com/thkt/gates/releases/download/v0.9.0/gates-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "213a7c1cd3cdc3799a7e35d49f78fd5b89b51f672aab1808614b7a7cd0f54e00"
+      sha256 "6f1e36f19aac7ccbc95c346efa93b4a85f6d3dbd677c1f8cc288020b099f0c76"
     end
   end
 
