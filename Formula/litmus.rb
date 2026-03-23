@@ -1,28 +1,28 @@
 class Litmus < Formula
   desc "Test quality linter for TypeScript/JavaScript - detects tests that pass but verify nothing"
   homepage "https://github.com/thkt/litmus"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/thkt/litmus/releases/download/v0.1.0/litmus-aarch64-apple-darwin.tar.gz"
-      sha256 "080125dca95eeb930137c9d1ef65e3da6aa35cd1db67ec0e151ae584b1e34625"
+      url "https://github.com/thkt/litmus/releases/download/v0.2.0/litmus-aarch64-apple-darwin.tar.gz"
+      sha256 "a9ee197876b62f1ee9e263fb26fac9eb2ad2561ac9b9cbc303e38a1ec9dc28e4"
     end
     on_intel do
-      url "https://github.com/thkt/litmus/releases/download/v0.1.0/litmus-x86_64-apple-darwin.tar.gz"
-      sha256 "8c52599c47107ba45e9169fa9c0e4a195ba4379d39be679ec5cdbe9aa0dc81a2"
+      url "https://github.com/thkt/litmus/releases/download/v0.2.0/litmus-x86_64-apple-darwin.tar.gz"
+      sha256 "22c9f139cd4ce04b8bc9e828d7a9a62d12f2a85ec2957a076cf6cb3446b6da59"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/thkt/litmus/releases/download/v0.1.0/litmus-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "f0a039c40e1a5f770e46ab5fe4c2675d5d34c342bb91e65b44647a2ff70be8e8"
+      url "https://github.com/thkt/litmus/releases/download/v0.2.0/litmus-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "ba76b781d497e3c7ccd48d42d5145a43026cebdd58f3f11fb64c593eccde4284"
     end
     on_intel do
-      url "https://github.com/thkt/litmus/releases/download/v0.1.0/litmus-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "55effcc449756af80122a334783947e4ca9b9f9cad945b35a3fd89c785b3d045"
+      url "https://github.com/thkt/litmus/releases/download/v0.2.0/litmus-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "184fea68b6856efef8359ed52f8eff5e2bb8ed6b7c62a68a0fab072919fe7516"
     end
   end
 
