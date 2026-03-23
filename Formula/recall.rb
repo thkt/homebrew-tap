@@ -7,14 +7,14 @@ class Recall < Formula
   on_macos do
     on_arm do
       url "https://github.com/thkt/recall/releases/download/v0.4.1/recall-aarch64-apple-darwin.tar.gz"
-      sha256 "5dfd4b03cc8515868fb6ce95de0aa81e4f198adfca9a7383759f5fb97b120128"
+      sha256 "6288c78b7b2a9719d20ad1ec9179c234bc63d9609d6498638884d2604243749a"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/thkt/recall/releases/download/v0.4.1/recall-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "4c39844e6e48eecbbb11e449e1e203acaf9f052120e4495a3f13c4798d178c2c"
+      sha256 "1a092a568e844e13fa9d87e462ea9f21a08ea8c7152aad4de2ce8be7b6e19386"
     end
   end
 
