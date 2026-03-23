@@ -19,11 +19,15 @@ class Recall < Formula
   end
 
   def install
-    bin.install "recall"
+    if OS.mac?
+      libexec.install "recall", "mlx.metallib"
+      bin.install_symlink libexec/"recall"
+    else
+      bin.install "recall"
+    end
   end
 
   test do
     assert_match "recall", shell_output("#{bin}/recall --help")
   end
 end
-
