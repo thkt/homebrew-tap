@@ -1,20 +1,20 @@
 class Recall < Formula
   desc "Search past Claude Code and Codex sessions with semantic search"
   homepage "https://github.com/thkt/recall"
-  version "0.4.0"
+  version "0.4.1"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/thkt/recall/releases/download/v0.4.0/recall-aarch64-apple-darwin.tar.gz"
-      sha256 "e74bca136aebaeec896ca5a5dcbca62b1c3945d5709fe2a777d47c90e2eb43d4"
+      url "https://github.com/thkt/recall/releases/download/v0.4.1/recall-aarch64-apple-darwin.tar.gz"
+      sha256 "5dfd4b03cc8515868fb6ce95de0aa81e4f198adfca9a7383759f5fb97b120128"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/thkt/recall/releases/download/v0.4.0/recall-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "54dbca4f3e0cc2faac27398b9ca02379fe26087eb3abc1e10824f6ebfcf3a744"
+      url "https://github.com/thkt/recall/releases/download/v0.4.1/recall-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "4c39844e6e48eecbbb11e449e1e203acaf9f052120e4495a3f13c4798d178c2c"
     end
   end
 
