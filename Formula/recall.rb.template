@@ -12,10 +12,6 @@ class Recall < Formula
   end
 
   on_linux do
-    on_arm do
-      url "https://github.com/thkt/recall/releases/download/__TAG__/recall-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "__SHA_AARCH64_LINUX__"
-    end
     on_intel do
       url "https://github.com/thkt/recall/releases/download/__TAG__/recall-x86_64-unknown-linux-gnu.tar.gz"
       sha256 "__SHA_X86_64_LINUX__"
@@ -30,3 +26,4 @@ class Recall < Formula
     assert_match "recall", shell_output("#{bin}/recall --help")
   end
 end
+
