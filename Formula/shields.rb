@@ -1,28 +1,28 @@
 class Shields < Formula
   desc "Claude Code security hook - command guard + file ACL"
   homepage "https://github.com/thkt/shields"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/thkt/shields/releases/download/v0.1.0/shields-aarch64-apple-darwin.tar.gz"
-      sha256 "87754ea93dcae683d4edcc97226d0b8e054991318e4c72d99de42ca6705c80bf"
+      url "https://github.com/thkt/shields/releases/download/v0.2.0/shields-aarch64-apple-darwin.tar.gz"
+      sha256 "6f5f6853c2eb2d0dbe6f9a473f0c4410ea0a1d678b02fc2df37a73298043170f"
     end
     on_intel do
-      url "https://github.com/thkt/shields/releases/download/v0.1.0/shields-x86_64-apple-darwin.tar.gz"
-      sha256 "fec40d8bdffb37c1f08fef3d8423ab51bd2520c5f99adc45e1edebad2cc708ba"
+      url "https://github.com/thkt/shields/releases/download/v0.2.0/shields-x86_64-apple-darwin.tar.gz"
+      sha256 "145ad3a732673cec8e19a8b4364db165d43089f2c46e4c9289789381f504c945"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/thkt/shields/releases/download/v0.1.0/shields-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "ae304eb664c417461e3d35f4ec6453993643a6b22f39d5a8d24b7d2bd4566109"
+      url "https://github.com/thkt/shields/releases/download/v0.2.0/shields-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "015de4a66a77831f2704fa611b3719628505a0b8abd2216ea766615be1096ef8"
     end
     on_intel do
-      url "https://github.com/thkt/shields/releases/download/v0.1.0/shields-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "fecc409d6ca31184306ea4cadf43e9a368f663cf560c288710f1c7ed5f7a33ae"
+      url "https://github.com/thkt/shields/releases/download/v0.2.0/shields-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "cdf4a36f25fa57842ddb2f7258af46528e353c37a2a358cc1b1f1488329a4c1b"
     end
   end
 
