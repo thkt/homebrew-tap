@@ -1,50 +1,19 @@
 class Yomu < Formula
   desc "Frontend-specialized semantic code search CLI"
   homepage "https://github.com/thkt/yomu"
-  version "0.10.1"
+  url "https://github.com/thkt/yomu/archive/refs/tags/v0.10.2.tar.gz"
+  sha256 "3696e89b59e6624c06fdfe6c40dca10f3693d0e19876273245ea90ec518b8940"
   license "MIT"
 
-  on_macos do
-    on_arm do
-      url "https://github.com/thkt/yomu/releases/download/v0.10.1/yomu-aarch64-apple-darwin.tar.gz"
-      sha256 "3f1718e7a20262e937d29c94b8cd5faedfe29e8911be08403d37f0a7802bd3d6"
-    end
-    on_intel do
-      url "https://github.com/thkt/yomu/releases/download/v0.10.1/yomu-x86_64-apple-darwin.tar.gz"
-      sha256 ""
-    end
-  end
-
-  on_linux do
-    on_arm do
-      url "https://github.com/thkt/yomu/releases/download/v0.10.1/yomu-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 ""
-    end
-    on_intel do
-      url "https://github.com/thkt/yomu/releases/download/v0.10.1/yomu-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 ""
-    end
-  end
+  depends_on "cmake" => :build
+  depends_on "rust" => :build
+  depends_on :macos
 
   def install
-    bin.install "yomu"
-  end
-
-  def caveats
-    <<~EOS
-      Set your Gemini API key for semantic search:
-
-        export GEMINI_API_KEY="<your-api-key>"
-
-      Get your API key at: https://aistudio.google.com/apikey
-
-      Usage:
-
-        yomu search "button component"
-        yomu index
-        yomu impact src/hooks/useAuth.ts
-        yomu status
-    EOS
+    system "cargo", "build", "--release"
+    bin.install "target/release/yomu"
+    metallib = Dir.glob("target/release/build/mlx-sys-*/out/build/lib/mlx.metallib").first
+    bin.install metallib if metallib
   end
 
   test do
