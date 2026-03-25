@@ -1,19 +1,19 @@
 class Yomu < Formula
   desc "Frontend-specialized semantic code search CLI"
   homepage "https://github.com/thkt/yomu"
-  url "https://github.com/thkt/yomu/archive/refs/tags/v0.10.2.tar.gz"
-  sha256 "3696e89b59e6624c06fdfe6c40dca10f3693d0e19876273245ea90ec518b8940"
+  version "0.10.3"
   license "MIT"
 
-  depends_on "cmake" => :build
-  depends_on "rust" => :build
-  depends_on :macos
+  on_macos do
+    on_arm do
+      url "https://github.com/thkt/yomu/releases/download/v0.10.3/yomu-aarch64-apple-darwin.tar.gz"
+      sha256 "032cf0e03f3cd24e840aced397fe8d0342f6da9430fde8f44c192a6e72efec8e"
+    end
+  end
 
   def install
-    system "cargo", "build", "--release"
-    bin.install "target/release/yomu"
-    metallib = Dir.glob("target/release/build/mlx-sys-*/out/build/lib/mlx.metallib").first
-    bin.install metallib if metallib
+    bin.install "yomu"
+    bin.install "mlx.metallib" if File.exist?("mlx.metallib")
   end
 
   test do
