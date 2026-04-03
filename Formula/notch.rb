@@ -1,28 +1,28 @@
 class Notch < Formula
   desc "Notion Page to Markdown CLI"
   homepage "https://github.com/thkt/notch"
-  version "0.4.0"
+  version "0.5.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/thkt/notch/releases/download/v0.4.0/notch-aarch64-apple-darwin.tar.gz"
-      sha256 "837e0fb62db0c28bbf090c7fb5bbcdf2db57bf105d632d3e33afc59569aba82a"
+      url "https://github.com/thkt/notch/releases/download/v0.5.0/notch-aarch64-apple-darwin.tar.gz"
+      sha256 "d13f6a0aa33504c3bce3013a1a234a4c9c09ef8551fba22344ca65c6e13d14c3"
     end
     on_intel do
-      url "https://github.com/thkt/notch/releases/download/v0.4.0/notch-x86_64-apple-darwin.tar.gz"
-      sha256 "e75e210fd745ac4918411d6f9b5a96900550e2c0fc2dfa140943313514a0cbd3"
+      url "https://github.com/thkt/notch/releases/download/v0.5.0/notch-x86_64-apple-darwin.tar.gz"
+      sha256 "ea15e1b65da322223ba6142609f2f0d9d8dbcf6b7e70514e1566e13203eda256"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/thkt/notch/releases/download/v0.4.0/notch-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "6d136f5d512595779f5f66f3ab931a6bf9cb34c0c3e52e277ad842f583168765"
+      url "https://github.com/thkt/notch/releases/download/v0.5.0/notch-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "80d2443fa0e056d0d978a790b3f446c2faa296a51417eacb856ed1c84ccc0849"
     end
     on_intel do
-      url "https://github.com/thkt/notch/releases/download/v0.4.0/notch-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "e2dffa4156bf1ce8e6f81edf413a5eea95840808f9d99380d83a3478c67cda81"
+      url "https://github.com/thkt/notch/releases/download/v0.5.0/notch-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "1b7e369457f72948e4ac0db89a4035d23e9c7967685324492f7e6b270c5a91c6"
     end
   end
 
