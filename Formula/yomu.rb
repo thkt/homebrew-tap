@@ -1,12 +1,12 @@
 class Yomu < Formula
   desc "Frontend-specialized semantic code search CLI"
   homepage "https://github.com/thkt/yomu"
-  version "0.13.0"
+  version "0.13.1"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/thkt/yomu/releases/download/v0.13.0/yomu-aarch64-apple-darwin.tar.gz"
+      url "https://github.com/thkt/yomu/releases/download/v0.13.1/yomu-aarch64-apple-darwin.tar.gz"
       sha256 ""
     end
   end
