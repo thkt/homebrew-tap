@@ -30,27 +30,6 @@ class Guardrails < Formula
     bin.install "guardrails"
   end
 
-  def caveats
-    <<~EOS
-      To use guardrails with Claude Code, add to your ~/.claude/settings.json:
-
-        "hooks": {
-          "PreToolUse": [
-            {
-              "matcher": "Write|Edit|MultiEdit",
-              "hooks": [
-                {
-                  "type": "command",
-                  "command": "#{HOMEBREW_PREFIX}/bin/guardrails",
-                  "timeout": 1000
-                }
-              ]
-            }
-          ]
-        }
-    EOS
-  end
-
   test do
     output = pipe_output(bin/"guardrails", '{"tool_input":{"content":"test"}}', 0)
     assert_match "pass", output
