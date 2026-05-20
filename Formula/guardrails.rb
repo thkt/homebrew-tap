@@ -1,28 +1,28 @@
 class Guardrails < Formula
   desc "PreToolCall hook for Claude Code - security guardrails using biome + custom rules"
   homepage "https://github.com/thkt/claude-guardrails"
-  version "0.15.0"
+  version "0.15.1"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/thkt/claude-guardrails/releases/download/v0.15.0/guardrails-aarch64-apple-darwin.tar.gz"
-      sha256 "f74a2bff0d536d03df98f72f702356b9bb5296df628e02924588df47f1464dcc"
+      url "https://github.com/thkt/claude-guardrails/releases/download/v0.15.1/guardrails-aarch64-apple-darwin.tar.gz"
+      sha256 "2201d739dde2b1f58cb8118065081d9642414d8ed164edb27f677aabebbeadaa"
     end
     on_intel do
-      url "https://github.com/thkt/claude-guardrails/releases/download/v0.15.0/guardrails-x86_64-apple-darwin.tar.gz"
-      sha256 "1c7a01647577c38a646a78d0cbcfc09bae0e78bfb4c8c3b1176677a25785bca9"
+      url "https://github.com/thkt/claude-guardrails/releases/download/v0.15.1/guardrails-x86_64-apple-darwin.tar.gz"
+      sha256 "f8a50a28677e0c524c4508d564901875778e01d3358ce138bc4170aa52192a6f"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/thkt/claude-guardrails/releases/download/v0.15.0/guardrails-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "34a4e7c4633ac195f58850040a40a0bb136f80d9e10c8debde09f3c80c50d7b3"
+      url "https://github.com/thkt/claude-guardrails/releases/download/v0.15.1/guardrails-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "d53dbe42a6892d9623bd39cc7cd5b2072753e76060a0b4b60e024688a91ec44a"
     end
     on_intel do
-      url "https://github.com/thkt/claude-guardrails/releases/download/v0.15.0/guardrails-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "9a2690a5c550b979377a8b62351ee8d7fe0ffcaf4deeacfaa4f0190652e71bba"
+      url "https://github.com/thkt/claude-guardrails/releases/download/v0.15.1/guardrails-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "00b304be159699f7e48178f7054bb3943d6a70f69e00a05fb2a17073be9f0c4e"
     end
   end
 
