@@ -1,5 +1,5 @@
 class Guardrails < Formula
-  desc "PreToolCall hook for Claude Code - security guardrails using biome + custom rules"
+  desc "Code quality checker for Claude Code's PreToolUse hook"
   homepage "https://github.com/thkt/guardrails"
   version "__VERSION__"
   license "MIT"
