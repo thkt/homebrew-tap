@@ -1,28 +1,28 @@
 class Guardrails < Formula
-  desc "PreToolCall hook for Claude Code - security guardrails using biome + custom rules"
-  homepage "https://github.com/thkt/claude-guardrails"
-  version "0.16.0"
+  desc "Code quality checker for Claude Code's PreToolUse hook"
+  homepage "https://github.com/thkt/guardrails"
+  version "0.17.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/thkt/claude-guardrails/releases/download/v0.16.0/guardrails-aarch64-apple-darwin.tar.gz"
-      sha256 "a69c81a5eabcc9ee4a7a860bd573466de215681e67678d91e367524aad427d80"
+      url "https://github.com/thkt/guardrails/releases/download/v0.17.0/guardrails-aarch64-apple-darwin.tar.gz"
+      sha256 "f4395f80977627b8271167cb79bb74324b9456b12d1b3bdaa54f90209fdee10a"
     end
     on_intel do
-      url "https://github.com/thkt/claude-guardrails/releases/download/v0.16.0/guardrails-x86_64-apple-darwin.tar.gz"
-      sha256 "a68f4c4c2fdea2486a4d3444ac3583f24adaf3f26c5a28f479f681ff255dd2dc"
+      url "https://github.com/thkt/guardrails/releases/download/v0.17.0/guardrails-x86_64-apple-darwin.tar.gz"
+      sha256 "ac083d42caf115d2db26bd0f3c0409af9a8c95e9765b45a39bf3b17e88f96404"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/thkt/claude-guardrails/releases/download/v0.16.0/guardrails-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "4ca568a47bcde3151f885fd13f65d0990b39f771c33e4f5ba034f628268e7d24"
+      url "https://github.com/thkt/guardrails/releases/download/v0.17.0/guardrails-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "d73cc6ff7980b357ea182b69843c0bcda101a9ac22ba0954b6aa8b9e7407d05d"
     end
     on_intel do
-      url "https://github.com/thkt/claude-guardrails/releases/download/v0.16.0/guardrails-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "b7f56fd82e197cd19a2833e0d9cceb6bec87736beb93c6c5730a7886cbe3ff73"
+      url "https://github.com/thkt/guardrails/releases/download/v0.17.0/guardrails-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "ed709a15ae7db66363ab7ca0ce06e931eceaff3a11ee14c55b15fbcb499562f5"
     end
   end
 
