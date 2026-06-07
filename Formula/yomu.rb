@@ -7,7 +7,7 @@ class Yomu < Formula
   on_macos do
     on_arm do
       url "https://github.com/thkt/yomu/releases/download/v0.16.0/yomu-aarch64-apple-darwin.tar.gz"
-      sha256 ""
+      sha256 "f39bcc614a695871fcbad350f93d922065c32d15eb7bd37e4bdf8fb1d49cd069"
     end
   end
 
