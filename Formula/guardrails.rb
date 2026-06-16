@@ -1,28 +1,28 @@
 class Guardrails < Formula
   desc "Code quality checker for Claude Code's PreToolUse hook"
   homepage "https://github.com/thkt/guardrails"
-  version "0.17.0"
+  version "0.18.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/thkt/guardrails/releases/download/v0.17.0/guardrails-aarch64-apple-darwin.tar.gz"
-      sha256 "f4395f80977627b8271167cb79bb74324b9456b12d1b3bdaa54f90209fdee10a"
+      url "https://github.com/thkt/guardrails/releases/download/v0.18.0/guardrails-aarch64-apple-darwin.tar.gz"
+      sha256 "e7f77d0035d88bc7e1a1a45e653e809f0d629cf48f1c6e168dd6512a71c71617"
     end
     on_intel do
-      url "https://github.com/thkt/guardrails/releases/download/v0.17.0/guardrails-x86_64-apple-darwin.tar.gz"
-      sha256 "ac083d42caf115d2db26bd0f3c0409af9a8c95e9765b45a39bf3b17e88f96404"
+      url "https://github.com/thkt/guardrails/releases/download/v0.18.0/guardrails-x86_64-apple-darwin.tar.gz"
+      sha256 "852023a0c0ace62003c456dbdf2c14f9226f193caa5c08e3087262b2b6a1cab0"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/thkt/guardrails/releases/download/v0.17.0/guardrails-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "d73cc6ff7980b357ea182b69843c0bcda101a9ac22ba0954b6aa8b9e7407d05d"
+      url "https://github.com/thkt/guardrails/releases/download/v0.18.0/guardrails-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "37b8ce3ced8930c94e7fba726053ac5fa999901a360d6b5aaff20fb36e831d05"
     end
     on_intel do
-      url "https://github.com/thkt/guardrails/releases/download/v0.17.0/guardrails-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "ed709a15ae7db66363ab7ca0ce06e931eceaff3a11ee14c55b15fbcb499562f5"
+      url "https://github.com/thkt/guardrails/releases/download/v0.18.0/guardrails-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "c7dd3ff6b4c3e9f358a8e92faa730c098b7aabf14410a1c676a35a3a26b2321f"
     end
   end
 
