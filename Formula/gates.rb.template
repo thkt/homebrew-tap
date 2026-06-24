@@ -30,23 +30,6 @@ class Gates < Formula
     bin.install "gates"
   end
 
-  def caveats
-    <<~EOS
-      To use gates with Claude Code, add a completion hook to ~/.claude/settings.json.
-      See https://github.com/thkt/gates#usage for details.
-
-      Enable gates per project in .claude/tools.json:
-
-        {
-          "gates": {
-            "knip": true,
-            "tsgo": true,
-            "madge": true
-          }
-        }
-    EOS
-  end
-
   test do
     (testpath/".git").mkpath
     assert_equal "", shell_output("#{bin}/gates #{testpath}")
