@@ -30,27 +30,6 @@ class Formatter < Formula
     bin.install "formatter"
   end
 
-  def caveats
-    <<~EOS
-      To use formatter with Claude Code, add to your ~/.claude/settings.json:
-
-        "hooks": {
-          "PostToolUse": [
-            {
-              "matcher": "Write|Edit|MultiEdit",
-              "hooks": [
-                {
-                  "type": "command",
-                  "command": "#{HOMEBREW_PREFIX}/bin/formatter",
-                  "timeout": 2000
-                }
-              ]
-            }
-          ]
-        }
-    EOS
-  end
-
   test do
     output = pipe_output(bin/"formatter", '{"tool_name":"Write","tool_input":{"file_path":"test.txt"}}', 0)
     assert_equal "", output
