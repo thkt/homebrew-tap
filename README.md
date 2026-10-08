@@ -53,7 +53,7 @@ brew install scout yomu recall
 
 | Formula                                            | Description                                               |
 | -------------------------------------------------- | --------------------------------------------------------- |
-| [scout](https://github.com/thkt/scout)             | Web search (Gemini Grounding) and page fetch CLI          |
+| [scout](https://github.com/thkt/scout)             | CLI for Brave Search, page fetching, and GitHub exploration |
 | [yomu](https://github.com/thkt/yomu)               | Frontend-specialized semantic code search CLI             |
 | [recall](https://github.com/thkt/recall)           | Semantic search for past Claude Code sessions            |
 | [notch](https://github.com/thkt/notch)             | Notion Page to Markdown CLI                               |
