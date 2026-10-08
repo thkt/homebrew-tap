@@ -1,5 +1,5 @@
 class Scout < Formula
-  desc "MCP server for web search (Gemini Grounding) and page fetching (HTML to Markdown)"
+  desc "CLI for Brave Search, page fetching, and GitHub exploration"
   homepage "https://github.com/thkt/scout"
   version "__VERSION__"
   license "MIT"
@@ -31,6 +31,6 @@ class Scout < Formula
   end
 
   test do
-    assert_match "scout", shell_output("#{bin}/scout --help 2>&1", 2)
+    assert_match "scout", shell_output("#{bin}/scout --help 2>&1", 0)
   end
 end
