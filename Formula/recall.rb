@@ -1,19 +1,18 @@
 class Recall < Formula
   desc "Search past Claude Code and Codex sessions with semantic search"
   homepage "https://github.com/thkt/recall"
-  version "0.13.0"
+  version "0.14.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/thkt/recall/releases/download/v0.13.0/recall-aarch64-apple-darwin.tar.gz"
-      sha256 "bef7beedeb623dbbad0e653775ec445e9dc204d45301e7c89de5256a006b3e18"
+      url "https://github.com/thkt/recall/releases/download/v0.14.0/recall-aarch64-apple-darwin.tar.gz"
+      sha256 "4964c1d8dd11cdd7eb444a24cca83cd573de90077ee3a5ff990fcdba4ea7e59a"
     end
   end
 
   def install
-    libexec.install "recall", "mlx.metallib"
-    bin.install_symlink libexec/"recall"
+    bin.install "recall"
   end
 
   test do
