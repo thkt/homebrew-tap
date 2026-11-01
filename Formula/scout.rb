@@ -1,28 +1,28 @@
 class Scout < Formula
   desc "CLI for Brave Search, page fetching, and GitHub exploration"
   homepage "https://github.com/thkt/scout"
-  version "2.6.3"
+  version "2.6.4"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/thkt/scout/releases/download/v2.6.3/scout-aarch64-apple-darwin.tar.gz"
-      sha256 "4f8f18e76339f3d7b22ebc10449245edd3f164f2ca6ab6be5920f4a211628cf8"
+      url "https://github.com/thkt/scout/releases/download/v2.6.4/scout-aarch64-apple-darwin.tar.gz"
+      sha256 "163280303e790bb6e745cfbbe1e095700e4e5546f409b81ecd4708105fe1460e"
     end
     on_intel do
-      url "https://github.com/thkt/scout/releases/download/v2.6.3/scout-x86_64-apple-darwin.tar.gz"
-      sha256 "c420607ad6eb7e3db83540f7139a311c84c2490fc2d2e9badb082419b2d848ba"
+      url "https://github.com/thkt/scout/releases/download/v2.6.4/scout-x86_64-apple-darwin.tar.gz"
+      sha256 "ca79e1e0473782de6c4c42f96f8b0a82a0ad5c1edb6bbd955584fbaeb65b89aa"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/thkt/scout/releases/download/v2.6.3/scout-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "97227fdfa088219e880727fc2e72eb26e01aed2095de63824c414e689545ced4"
+      url "https://github.com/thkt/scout/releases/download/v2.6.4/scout-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "66f368390ed94dd793a5580748bfa3264b381581f8927600a1e1a4b4690ea96d"
     end
     on_intel do
-      url "https://github.com/thkt/scout/releases/download/v2.6.3/scout-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "2e75759af422304885f8195029bfed928bbb32be97e13e6b3eb349aa2803873b"
+      url "https://github.com/thkt/scout/releases/download/v2.6.4/scout-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "2a002f43bc7622d52f192ac36ae8cc43a36e3a9f2d0cb5071118f6c62116497d"
     end
   end
 
